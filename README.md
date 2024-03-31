@@ -4,23 +4,23 @@
 nltkのcmudict(カーネギーメロン大学が作成した発音辞書)をベースとして、非収録語にもある程度対応できるアルゴリズムを採用しています。  
 
 # セットアップ
-"""
+```
 pip install count-syllable
-"""
+```
 
 # アンインストール
-"""
+```
 pip uninstall count-syllable nltk
-"""
+```
 
 # 使用方法
-"""
+```
 from count_syllable import count_syllable
 
 data = count_syllable("anyone")
 
 print(data)
-"""
+```
 
 # アルゴリズム
 
