@@ -46,9 +46,10 @@ print(data)
   
 # 論文
 
-論文化、または、学会発表を予定してます。  
-
-
+- 赤木信也：変数置き換えモデルを用いた英日両文に適用可能なリーダビリティ判定ツールの開発と公開
+	- 情報処理学会研究報告,2025,NL-264,No.8,pp.1-10,2025-06-29
+	- https://jglobal.jst.go.jp/detail?JGLOBAL_ID=202502284060321622
+  
 # ライセンス
 - count-syllable
 	- Python Software Foundation License
