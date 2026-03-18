@@ -24,6 +24,7 @@ def count_consecutive_vowel(word):
 	return count
 
 def count_syllable(word):
+	# 課題：略語（大文字のみの場合への対処）
 	# lower
 	word = word.lower()
 
@@ -52,7 +53,7 @@ def count_syllable(word):
 		else:
 			c_vowel = 0	
 
-		return pre_syllable - c_vowel
+		return (pre_syllable - c_vowel) or 1
 	else:
 		# suffix matching
 		suf_flag = False
@@ -86,7 +87,7 @@ def count_syllable(word):
 			else:
 				c_vowel = 0
 
-		return pre_syllable + suf_syllable - c_vowel
+		return (pre_syllable + suf_syllable - c_vowel) or 1
 	else:
 		# middle matching
 		word = word[0:j]
@@ -105,4 +106,4 @@ def count_syllable(word):
 			else:
 				c_vowel = count_consecutive_vowel(word)
 
-		return pre_syllable + mid_syllable + suf_syllable - c_vowel
+		return (pre_syllable + mid_syllable + suf_syllable - c_vowel) or 1
