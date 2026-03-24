@@ -1,7 +1,7 @@
 from nltk.corpus import cmudict
 
 d = cmudict.dict()
-pre_dict = {}
+pre_dict = {"gen":1}
 suf_dict = {"tion":1, "uation":3}
 add_dict = {}
 hiatus = {}
