@@ -14,7 +14,7 @@ def count_vowel(word):
 	for w in word:
 		if w in "aeiouy":
 			count += 1
-	return count
+	return count or 1
 
 def count_consecutive_vowel(word):
 	count = 0
