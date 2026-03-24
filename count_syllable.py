@@ -1,4 +1,5 @@
 from nltk.corpus import cmudict
+import pickle
 
 d = cmudict.dict()
 pre_dict = {"gen":1}
@@ -24,7 +25,12 @@ def count_consecutive_vowel(word):
 	return count
 
 def count_syllable(word):
-	# 課題：略語（大文字のみの場合への対処）
+	# 略語対応
+	with open("abbreviations.pkl", "rb") as f:
+		abbreviations = pickle.load(f)
+	if word in abbreviations:
+		return abbreviations[word]
+
 	# lower
 	word = word.lower()
 
